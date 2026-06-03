@@ -12,7 +12,7 @@ def startup_event():
 
 @app.get("/")
 def test():
-    return JSONResponse(status_code=200, content={"Success": True, "message": "This is test route"})
+    return JSONResponse(status_code=200, content={"Success": True, "message": "This is test route app"})
 
 
 @app.post("/predict", response_model=PredictionResponse)
